@@ -6,7 +6,7 @@ restart_nautilus() {
     read -p "Restart Nautilus(Files)? [Y/n]" ans
 
     if [[ $ans == 'y' || $ans == 'Y' || $ans == '' ]]; then
-        nautilus -q
+        sudo -u $SUDO_USER nautilus -q
     fi
 }
 
